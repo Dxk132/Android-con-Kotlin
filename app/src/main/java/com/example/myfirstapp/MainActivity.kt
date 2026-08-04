@@ -18,7 +18,10 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val boton = findViewById<Button>(R.id.boton)
+        //val boton = findViewById<Button>(R.id.boton)//
+
+        val boton: Button = findViewById<Button>(R.id.boton)
+
         boton.setOnClickListener {
             Toast.makeText(this, "esto es un toast", Toast.LENGTH_SHORT).show()
         }
