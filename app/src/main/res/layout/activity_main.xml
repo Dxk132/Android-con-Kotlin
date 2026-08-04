@@ -9,6 +9,7 @@
 
 
     <TextView
+        android:id="@+id/hola_mundo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hola_mundo"
@@ -19,6 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
+        android:id="@+id/nombre_usario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="68dp"
@@ -28,7 +30,7 @@
         tools:layout_editor_absoluteX="0dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/boton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="224dp"
