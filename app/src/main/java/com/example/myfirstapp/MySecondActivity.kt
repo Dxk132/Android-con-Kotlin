@@ -1,6 +1,7 @@
 package com.example.myfirstapp
 
 import android.os.Bundle
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,5 +17,9 @@ class MySecondActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        val nombre = intent.getStringExtra("nombre_usuario")
+        val textView = findViewById<TextView>(R.id.textView)
+        textView.text = nombre
     }
 }
