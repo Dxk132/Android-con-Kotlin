@@ -3,6 +3,7 @@ package com.example.myfirstapp
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -22,9 +23,12 @@ class MainActivity : AppCompatActivity() {
         //val boton = findViewById<Button>(R.id.boton)//
 
         val boton: Button = findViewById<Button>(R.id.boton)
+        val nombreUsuarioEditText: EditText = findViewById(R.id.nombre_usuario)
 
         boton.setOnClickListener {
-           val intent = Intent(this, MySecondActivity::class.java)
+            val nombreUsuario = nombreUsuarioEditText.text.toString()
+            val intent = Intent(this, MySecondActivity::class.java)
+            intent.putExtra("nombre_usuario", nombreUsuario)
             startActivity(intent)
         }
     }
